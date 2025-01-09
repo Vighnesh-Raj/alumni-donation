@@ -21,8 +21,14 @@ The dataset consists of 49 universities and includes the following features:
 ## Methods
 ### 1. Exploratory Data Analysis (EDA):
 - **Distribution Analysis**: Histograms revealed that the alumni giving rate is right-skewed, suggesting the need for transformation.
+
+  ![Histogram](hist.png)
 - **Correlation Analysis**: Scatter plots identified a strong negative correlation between the student-faculty ratio and alumni giving rate. Other predictors showed weaker associations.
+
+![Scatter Plot](scatter.png)
 - **Box Plots**: Highlighted higher donation rates among private institutions.
+
+![Box Plot](boxplot.png)
 
 ### 2. Data Transformation:
 To address skewness and heteroscedasticity, the alumni giving rate was log-transformed:
@@ -46,15 +52,23 @@ The best-fit linear regression model is:
 - **Private (0.41)**: Private institutions have, on average, 1.50 times higher alumni giving rates than public institutions (e^0.41).
 - **Student-Faculty Ratio (-0.052)**: A one-unit increase in the student-faculty ratio reduces the alumni giving rate by approximately 5.2%.
 
+![Coefficients](coeff.png)
+
 ### Model Performance:
 - **R-squared**: 0.6383 (63.8% of the variance in the log-transformed alumni giving rate is explained).
 - **Adjusted R-squared**: 0.6222.
 - **Residual Standard Error**: 0.328.
 - **Mean Squared Error (Test Set)**: 0.13, indicating good predictive accuracy.
 
+![model](model.png)
+
 ### Diagnostic Results:
 - Residuals showed no significant patterns or correlations.
 - Adding other predictors (e.g., percent of classes under 20) or interaction terms did not significantly improve the model.
+
+
+![Residual](residual.png)
+![Residual2](residual2.png)
 
 ## Conclusions
 - **Key Findings**:
