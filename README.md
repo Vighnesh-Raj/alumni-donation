@@ -30,6 +30,8 @@ The dataset consists of 49 universities and includes the following features:
 
 ![Box Plot](boxplot.png)
 
+![Pie Chart](piechart.png)
+
 ### 2. Data Transformation:
 To address skewness and heteroscedasticity, the alumni giving rate was log-transformed:
 - Transformed response variable: `log(alumni giving rate)`.
