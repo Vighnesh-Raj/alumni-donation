@@ -39,7 +39,7 @@ To address skewness and heteroscedasticity, the alumni giving rate was log-trans
 ## Results
 ### Final Model:
 The best-fit linear regression model is:
-log(alumni giving rate) = 3.533 + 0.41(private) - 0.052(student-faculty ratio)
+`log(alumni giving rate) = 3.533 + 0.41(private) - 0.052(student-faculty ratio)`
 
 
 ### Coefficients:
