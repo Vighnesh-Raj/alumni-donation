@@ -47,20 +47,18 @@ To address skewness and heteroscedasticity, the alumni giving rate was log-trans
 The best-fit linear regression model is:
 `log(alumni giving rate) = 3.533 + 0.41(private) - 0.052(student-faculty ratio)`
 
+![model](model.png)
 
 ### Coefficients:
 - **Private (0.41)**: Private institutions have, on average, 1.50 times higher alumni giving rates than public institutions (e^0.41).
 - **Student-Faculty Ratio (-0.052)**: A one-unit increase in the student-faculty ratio reduces the alumni giving rate by approximately 5.2%.
 
-![Coefficients](coeff.png)
 
 ### Model Performance:
-- **R-squared**: 0.6383 (63.8% of the variance in the log-transformed alumni giving rate is explained).
-- **Adjusted R-squared**: 0.6222.
-- **Residual Standard Error**: 0.328.
+- **R-squared**: 0.6721 (67.2% of the variance in the log-transformed alumni giving rate is explained).
+- **Adjusted R-squared**: 0.6522.
+- **Residual Standard Error**: 0.317.
 - **Mean Squared Error (Test Set)**: 0.13, indicating good predictive accuracy.
-
-![model](model.png)
 
 ### Diagnostic Results:
 - Residuals showed no significant patterns or correlations.
